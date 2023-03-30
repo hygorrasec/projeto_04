@@ -32,7 +32,10 @@ elementos = [[a,b,c,d],[q,i,n,m],[f,e,h,j],[p,o,l,g]]
 - Linux: ```. venv/bin/activate``` ou: ```source venv/bin/activate```
 - Windows (PowerShell): ```.\venv\Scripts\Activate.ps1```
 - Windows (CMD): ```.\venv\Scripts\activate.bat```
-4. (WINDOWS) Se apresentar algum erro de permissão, siga: 1: Abrir o PowerShell como Administrador; 2: Digitar o comando: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned; 3: Fechar o terminal e abrir novamente. Provalmente vai funcionar.
+4. (WINDOWS) Se apresentar algum erro de permissão, siga:
+- Abrir o PowerShell como Administrador;
+- Digitar o comando: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned;
+- Fechar o terminal e abrir novamente. Provalmente vai funcionar.
 5. Instale as bibliotecas: ```pip install -r requirements.txt```
 
 ## Como Contribuir
