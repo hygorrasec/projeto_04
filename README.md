@@ -17,6 +17,7 @@ elementos = [[a,b,c,d],[q,i,n,m],[f,e,h,j],[p,o,l,g]]
 // Saída
 
 [a,b,c,d,e,f,g,h,i,j,l,m,n,o,p,q]
+
 [0:0,0:1,0:2,0:3,2:1,2:0,3:3,2:2,1:1,2:3,3:2,1:3,1:2,3:1,3:0,1:0]
 
 ## Tecnologia Utilizada
@@ -27,7 +28,10 @@ elementos = [[a,b,c,d],[q,i,n,m],[f,e,h,j],[p,o,l,g]]
 
 1. Faça o download ou clone do repositório para sua máquina.
 2. Crie um ambiente virtual: python3.x -m venv venv
-3. Ative o ambiente virtual: Linux: ```. venv/bin/activate``` ou: ```source venv/bin/activate``` | Windows (PowerShell): ```.\venv\Scripts\Activate.ps1``` | Windows (CMD): ```.\venv\Scripts\activate.bat```
+3. Ative o ambiente virtual:
+- Linux: ```. venv/bin/activate``` ou: ```source venv/bin/activate```
+- Windows (PowerShell): ```.\venv\Scripts\Activate.ps1```
+- Windows (CMD): ```.\venv\Scripts\activate.bat```
 4. (WINDOWS) Se apresentar algum erro de permissão, siga: 1: Abrir o PowerShell como Administrador; 2: Digitar o comando: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned; 3: Fechar o terminal e abrir novamente. Provalmente vai funcionar.
 5. Instale as bibliotecas: ```pip install -r requirements.txt```
 
