@@ -18,22 +18,21 @@
 import time
 import matplotlib.pyplot as plt
 
-def func_ordenar(elementos):
+def func_ordenar(matriz):
     valores = []
     posicao_dict = {}
 
-    for i in range(len(elementos)):
-        for j in range(len(elementos[i])):
-            valores.append(elementos[i][j])
-            posicao_dict[elementos[i][j]] = f'{i}:{j}'
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            valores.append(matriz[i][j])
+            posicao_dict[matriz[i][j]] = f'{i}:{j}'
     ordenando_dict = sorted(posicao_dict.items())
     lista_pra_dict = dict(ordenando_dict)
     valores_do_dict = lista_pra_dict.values()
     return list(valores_do_dict), valores
 
-elementos = [['a','b','c','d'],['q','i','n','m'],['f','e','h','j'],['p','o','l','g']]
-
-valores_final, valores = func_ordenar(elementos)
+matriz = [['a','b','c','d'],['q','i','n','m'],['f','e','h','j'],['p','o','l','g']]
+valores_final, valores = func_ordenar(matriz)
 
 print(sorted(valores))
 print(valores_final)
@@ -41,27 +40,24 @@ print(valores_final)
 tamanho_matriz = []
 tempo_execucao = []
 
-for e in range(1, 101):
+for elementos in range(1, 401, 4):
     
     start_for = time.perf_counter()
     
-    valores = []
-    posicao_dict = {}
-    
-    elementos = [['a','b','c','d'],['q','i','n','m'],['f','e','h','j'],['p','o','l','g']]
-    elementos = elementos * e
+    matriz = [['a','b','c','d'],['q','i','n','m'],['f','e','h','j'],['p','o','l','g']]
+    matriz = matriz * elementos
 
-    func_ordenar(elementos)
+    func_ordenar(matriz)
 
     end_for = time.perf_counter()
 
     microsegundos = (end_for-start_for) * 10**6
     
-    tamanho_matriz.append(e)
+    tamanho_matriz.append(elementos)
     tempo_execucao.append(microsegundos)
 
-plt.plot(tamanho_matriz, tempo_execucao, label="Função func_ordenar()")
-plt.xlabel('Tamanho da matriz')
+plt.plot(tamanho_matriz, tempo_execucao, label="Função func_ordenar(matriz)")
+plt.xlabel('Tamanho da matriz (matriz = matriz * elementos)')
 plt.ylabel('Tempo de execução (micro segundos)')
 plt.legend()
 plt.show()
