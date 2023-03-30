@@ -27,7 +27,7 @@ elementos = [[a,b,c,d],[q,i,n,m],[f,e,h,j],[p,o,l,g]]
 ## Como Utilizar
 
 1. Faça o download ou clone do repositório para sua máquina.
-2. Crie um ambiente virtual: python3.x -m venv venv
+2. Crie um ambiente virtual: ```python3.x -m venv venv```
 3. Ative o ambiente virtual:
 - Linux: ```. venv/bin/activate``` ou: ```source venv/bin/activate```
 - Windows (PowerShell): ```.\venv\Scripts\Activate.ps1```
