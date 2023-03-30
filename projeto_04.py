@@ -4,7 +4,7 @@
 # 30/03/2023
 # PROJETO 04
 
-# Tendo em vista o conjunto de elementos abaixo, criar um algoritmo que seja capaz de determinar a posição de cada elemento e printar as de forma ascendente os valores, assim como printar separadamente posições atuais. N ofinal imprimir de forma gráfica a notação Big'O do seu resultado.
+# O objetivo deste projeto é criar um algoritmo capaz de determinar a posição de cada elemento de um conjunto e imprimir esses valores de forma ascendente, bem como imprimir separadamente as posições atuais. Por fim, a notação Big'O do resultado deve ser impressa de forma gráfica.
 
 # // Entrada
 
